@@ -1,0 +1,71 @@
+{
+  "startup_business": {
+    "name": "Startup Growth Hacks",
+    "description": "Business tips, startup strategies, and entrepreneurship insights",
+    "tiktok_handle": "@StartupGrowthHacks",
+    "voice": "Rachel",
+    "voice_settings": {
+      "stability": 0.6,
+      "similarity_boost": 0.8,
+      "style": 0.6
+    },
+    "visual_style": "Modern startup office, professional environment with entrepreneurs, clean minimal aesthetic",
+    "video_duration": 30,
+    "tone": "Professional but energetic, authoritative yet approachable",
+    "target_audience": "Entrepreneurs, startup founders, business owners",
+    "content_themes": [
+      "Fundraising tips",
+      "Growth hacking strategies",
+      "Product-market fit",
+      "Startup mistakes to avoid",
+      "Scaling advice"
+    ],
+    "posting_schedule": "Daily at 9 AM, 2 PM, 7 PM CET"
+  },
+  "tech_insider": {
+    "name": "Tech Insider Daily",
+    "description": "Latest tech trends, product reviews, and innovation insights",
+    "tiktok_handle": "@TechInsiderDaily",
+    "voice": "Adam",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.7
+    },
+    "visual_style": "Futuristic tech environment, sleek gadgets, neon lighting, cyberpunk aesthetic",
+    "video_duration": 45,
+    "tone": "Excited and informative, tech-savvy and enthusiastic",
+    "target_audience": "Tech enthusiasts, early adopters, gadget lovers",
+    "content_themes": [
+      "iPhone hidden features",
+      "AI tool reviews",
+      "Tech product comparisons",
+      "Future technology trends",
+      "App recommendations"
+    ],
+    "posting_schedule": "Daily at 11 AM, 4 PM, 9 PM CET"
+  },
+  "money_mindset": {
+    "name": "Money Mindset Pro",
+    "description": "Personal finance, investing, and wealth-building strategies",
+    "tiktok_handle": "@MoneyMindsetPro",
+    "voice": "Antoni",
+    "voice_settings": {
+      "stability": 0.7,
+      "similarity_boost": 0.85,
+      "style": 0.5
+    },
+    "visual_style": "Luxury office environment, financial charts, professional wealth aesthetic",
+    "video_duration": 40,
+    "tone": "Confident and knowledgeable, trustworthy financial advisor",
+    "target_audience": "Young professionals, investors, wealth builders",
+    "content_themes": [
+      "Passive income strategies",
+      "Investment tips for beginners",
+      "Money mistakes to avoid",
+      "Retirement planning",
+      "Side hustle ideas"
+    ],
+    "posting_schedule": "Daily at 8 AM, 1 PM, 6 PM CET"
+  }
+}
