@@ -4,8 +4,7 @@ TikTok Video Factory - Main Entry Point
 Run the complete pipeline from idea to viral video
 """
 import sys
-from orchestrator import TikTokFactoryOrchestrator
-
+from orchestrator import TikTokFactoryOrchestrator, Config
 
 def main():
     # Get video topic from command line or use default
@@ -17,12 +16,10 @@ def main():
     print(f"\n🎬 TikTok Video Factory Starting...")
     print(f"📝 Topic: {topic}\n")
     
-    # Create orchestrator configuration
-    config = {
-        "openai_model": "gpt-4",
-        "elevenlabs_voice": "Rachel",
-        "output_dir": "output"
-    }
+    # Create orchestrator configuration using Config dataclass
+    config = Config(
+        agent_01_model="gpt-4"
+    )
     
     # Initialize orchestrator
     orchestrator = TikTokFactoryOrchestrator(config=config)
@@ -36,17 +33,16 @@ def main():
         print("✅ SUCCESS! Video generated successfully!")
         print(f"\n📁 Final Video: {result.get('final_video_path')}")
         print(f"\n📊 Pipeline Summary:")
-        print(f"  - Script generated: ✓")
-        print(f"  - Voice synthesized: ✓")
-        print(f"  - Video created: ✓")
-        print(f"  - Final composition: ✓")
+        print(f"   - Script generated: ✓")
+        print(f"   - Voice synthesized: ✓")
+        print(f"   - Video created: ✓")
+        print(f"   - Final composition: ✓")
     else:
         print("❌ ERROR: Pipeline failed")
         print(f"\nError message: {result.get('message', 'Unknown error')}")
     print("="*60 + "\n")
     
     return 0 if result.get("status") == "success" else 1
-
 
 if __name__ == "__main__":
     sys.exit(main())
