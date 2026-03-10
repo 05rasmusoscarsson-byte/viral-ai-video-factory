@@ -8,8 +8,9 @@ from dotenv import load_dotenv
 from orchestrator import TikTokFactoryOrchestrator, Config
 
 def main():
-        # Load environment variables from .env file
-        load_dotenv()
+    # Load environment variables from .env file
+    load_dotenv()
+    
     # Get video topic from command line or use default
     if len(sys.argv) > 1:
         topic = " ".join(sys.argv[1:])
