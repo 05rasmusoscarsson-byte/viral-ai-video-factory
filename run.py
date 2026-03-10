@@ -4,9 +4,12 @@ TikTok Video Factory - Main Entry Point
 Run the complete pipeline from idea to viral video
 """
 import sys
+from dotenv import load_dotenv
 from orchestrator import TikTokFactoryOrchestrator, Config
 
 def main():
+        # Load environment variables from .env file
+        load_dotenv()
     # Get video topic from command line or use default
     if len(sys.argv) > 1:
         topic = " ".join(sys.argv[1:])
